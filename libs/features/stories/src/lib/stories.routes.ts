@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
-import { StoriesComponent } from './components/stories/stories.component';
+import { StoriesShellComponent } from './components/stories-shell/stories-shell.component';
 
 export const storiesRoutes: Route[] = [
-  { path: '', component: StoriesComponent },
+  { path: '', component: StoriesShellComponent },
 ];
