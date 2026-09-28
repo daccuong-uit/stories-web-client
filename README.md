@@ -1,6 +1,6 @@
 # stories-web-client — Reals Stories
 
-> Angular 21 · Nx 22 · Port **4203** (dev & Docker)
+> Angular 21 · Nx 22 · Port **4204** (dev & Docker)
 
 Không gian **Đọc & Viết** trong hệ sinh thái Reals Platform. Chuyên trách long-form stories, tạp chí số, bộ sưu tập chuyên đề và trải nghiệm đọc tập trung (focus mode).
 
@@ -50,7 +50,7 @@ Không gian **Đọc & Viết** trong hệ sinh thái Reals Platform. Chuyên tr
 
 ```bash
 npm install
-npm start          # → http://localhost:4203
+npm start          # → http://localhost:4204
 npm run build
 ```
 
@@ -61,7 +61,7 @@ npm run build
 docker compose build fe-stories
 docker compose up -d fe-stories
 
-# → http://localhost:4203
+# → http://localhost:4204
 ```
 
 Nginx phục vụ Angular bundle và proxy `/api/*` → `gateway:3000`.
