@@ -78,7 +78,6 @@ const MOCK_MEDIA_ITEMS: MediaItem[] = [
             <section class="space-y-4 rounded-3xl border border-border-subtle bg-surface-muted p-6">
               <h2 class="text-xl font-semibold text-text-base">Usage notes</h2>
               <p class="text-sm text-text-muted">Files uploaded here are stored through the media service. Use the list to verify status and delete outdated assets.</p>
-              <p class="text-sm text-text-base"><strong>Stored token:</strong> {{ tokenPreview }}</p>
             </section>
           </div>
 
@@ -119,10 +118,6 @@ export class MediaPlatformComponent {
   isUploading = false;
   message = '';
   error = '';
-
-  get tokenPreview() {
-    return localStorage.getItem('token') ? 'stored in localStorage' : 'not available';
-  }
 
   async onFileSelected(event: Event) {
     const target = event.target as HTMLInputElement;
